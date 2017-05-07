@@ -31,10 +31,9 @@ Setup the MySQL or MariaDB database connection using the instructions for Larave
 If you are using docker-compose you can run ```docker-compose exec php-fpm bash```. Then cd to the project root and run the migration commands.
 
 ## Development
+
 Run either:
-```npm install```
-or
-```yarn```.
+```npm install``` or ```yarn```.
 
 The project comes with the following configured.
 - Bootstrap
@@ -45,7 +44,7 @@ Of course Larvel itself has:
   - Vue.js
   - Axios
 
-All of this is run through Laravel Mix which is built on Webpack. So please refer to the Laravel documentation for more information. 
+All of this is run through Laravel Mix which is built on Webpack. So please refer to the Laravel documentation for more information.
 
 
 ## Security Vulnerabilities
