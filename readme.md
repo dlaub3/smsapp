@@ -15,12 +15,15 @@ Move the .env.example to .env and configure your Algolia and Twilio credentials.
 
   - TWILIO_ACCOUNT_SID =
   - TWILIO_AUTH_TOKEN =
-  - TWILIO_NUMBER =
-
+  - TWILIO_NUMBER = ..
 
   - SCOUT_DRIVER=
   - ALGOLIA_APP_ID=
   - ALGOLIA_SECRET=
+
+Additionally Smsapp uses:
+  - APP_URL=
+  - APP_NAME=
 
 Setup the MySQL or MariaDB database connection using the instructions for Laravel. After the database connection is setup, run:
 
@@ -57,6 +60,13 @@ If you discover a security vulnerability within Smsapp. Please pm me on github.
 
 [PSR-4 coding standard](http://www.php-fig.org/psr/psr-4/)
 
+## Notes
+
+For analytics you can create a file called analytics-scripts.js at the project root. All scripts placed in this file will be included in /resources/views/layouts/app.blade.php. They will be included inline in the html. So make sure you use <script> tags. And depending on your project structure you may need to change the path in app.blade.php.
+
+## Todo
+- Create unit and functional tests
+- Enable progressive web app features
 
 ## License
 
