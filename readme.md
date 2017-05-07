@@ -60,7 +60,8 @@ For analytics you can create a file called analytics-scripts.js at the project r
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Smsapp. Please pm me on github.
+If you discover a security vulnerability within Smsapp. Please contact me via my
+[blog](https://www.codejots.com/contact/)
 
 ## Code Style
 
