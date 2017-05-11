@@ -54,7 +54,8 @@ All of this is run through Laravel Mix which is built on Webpack. So please refe
 
 For analytics you can create a file called analytics-scripts.js at the project root. All scripts placed in this file will be included in /resources/views/layouts/app.blade.php. They will be included inline in the html. So make sure you use ```<script>``` tags. And depending on your project structure you may need to change the path in app.blade.php
 
-To setup Spark Post email set the following in the .env file.
+To setup Spark Post email set the following in the .env file.  
+
 
 SPARKPOST_SECRET=
 
@@ -62,7 +63,7 @@ MAIL_DRIVER=sparkpost
 
 MAIL_FROM_ADDRESS=you@your-sparkpost-sending-domain
 
-MAIL_FROM_NAME=your-website-name
+MAIL_FROM_NAME=your-website-name  
 
 
 If you are using basic authentication with your web server, then in SmsController you will need to set the ```$url``` to  yourdomain.com/twilio/sms in order for Twilio to authenticate properly. Otherwise the username@password part of the request will cause an authentication error.
