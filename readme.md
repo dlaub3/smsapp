@@ -57,8 +57,11 @@ For analytics you can create a file called analytics-scripts.js at the project r
 To setup Spark Post email set the following in the .env file.
 
 SPARKPOST_SECRET=
+
 MAIL_DRIVER=sparkpost
+
 MAIL_FROM_ADDRESS=you@your-sparkpost-sending-domain
+
 MAIL_FROM_NAME=your-website-name
 
 
