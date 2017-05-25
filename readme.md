@@ -34,6 +34,8 @@ Setup the MySQL or MariaDB database connection using the instructions for Larave
 
 If you are using docker-compose you can run ```docker-compose exec php-fpm bash```. Then cd to the project root and run the migration commands.
 
+You will need to run ```php artisan queue:work``` for the messaging to work. Smsapp uses Laravel jobs to process the sending of messages.
+
 ## Development
 
 Run either:

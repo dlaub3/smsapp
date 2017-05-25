@@ -114,7 +114,13 @@
   <script src="/js/app.js"></script>
   {{-- Include Tracking Scripts. This places them inline.
   You might need to change the path. --}}
-  {{include('/var/www/smsapp/analytics-scripts.js')}}
+  <?php
+  //ob_ functions clean the return value 1. Otherwise it is output in the HTML
+      ob_start();
+      include "/var/www/smsapp/analytics-scripts.js";
+      $var =  ob_get_clean();
+      echo $var;
+  ?>
 </body>
 
 </html>
