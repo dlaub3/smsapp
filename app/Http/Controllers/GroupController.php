@@ -86,6 +86,15 @@ class GroupController extends Controller
         //Setup data for Validation
         $data = array('name' => $name,);
 
+        //these keywords are used in SmsController. Prevent them from being used
+        //for group names
+        $notAction = strtolower($name);
+        if ($notAction === 'join' || $notAction === 'leave' ||
+        $notAction === 'create' || $notAction === 'delete') {
+            $errors = ['name' => 'This name is not allowed.'];
+            return back()->withErrors($errors);
+        }
+
         //Validate data
         $this->validator($data)->validate();
 
